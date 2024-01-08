@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link rel="icon" href="icon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /* background: url(final.jpg) no-repeat; */
+        background-size: cover;
+      }
+      .main {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ol {
+        list-style: none;
+        display: flex;
+        font-size: 0.8rem;
+      }
+      ol li {
+        margin: 0 20px;
+        padding: 10px 20px;
+        position: relative;
+        transition: all 0.1s;
+        transition-delay: 0.1s;
+      }
+      ol li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      ol li::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: white;
+        transition: all 0.1s;
+      }
+      ol li:hover::before {
+        bottom: 40px;
+        /* background: rgb(79, 79, 243); */
+      }
+      ol li:hover {
+        background: rgb(79, 79, 243);
+      }
+      .img {
+        left: 60%;
+        top: 14%;
+        position: absolute;
+        transform: translate(-50% -50%);
+      }
+      .img img {
+        border-radius: 50%;
+
+        height: 150px;
+        width: 150px;
+        -webkit-filter: drop-shadow(6px 6px 7px rgb(116, 137, 255));
+      }
+
+      .head {
+        left: 55%;
+        top: 35%;
+        position: absolute;
+        transform: translate(-50% -50%);
+        background-color: rgb(255, 255, 255);
+        opacity: 70%;
+        height: 400px;
+        width: 450px;
+        border-bottom: 2px solid rgb(105, 88, 255);
+        margin-bottom: 20px;
+      }
+      .head h1 {
+        color: rgb(116, 137, 255);
+        font-size: xx-large;
+        font-family: sans-serif;
+        padding: 2%;
+
+        margin-left: 20%;
+        margin-top: 5%;
+      }
+      .head p {
+        color: rgb(116, 137, 255);
+        font-family: sans-serif;
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 25px;
+      }
+      .img1 {
+        left: 5%;
+        top: 10%;
+        position: absolute;
+        transform: translate(-50% -50%);
+      }
+      .img1 img {
+        height: 600px;
+        width: 650px;
+        -webkit-filter: drop-shadow(6px 6px 7px rgb(0, 0, 0));
+      }
+      @media screen and (max-width: 950px) {
+        .main {
+          width: 100%;
+          height: 10vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        ol li {
+          margin: 0 15px;
+          /* margin-left:5%; */
+          padding: 5px 5px;
+          position: relative;
+          transition: all 0.1s;
+          transition-delay: 0.1s;
+        }
+        .img1 {
+          position: absolute;
+          top: 14%;
+          left: 2%;
+          transform: translate(-50% -50%);
+        }
+        .img1 img {
+          height: 400px;
+          width: 350px;
+        }
+        .head {
+          top: 40%;
+          left: 55%;
+          position: absolute;
+          transform: translate(-50% -50%);
+          margin-bottom: 10px;
+          height: 300px;
+        width: 300px;
+        }
+        .head h1 {
+        color: rgb(116, 137, 255);
+        font-size: xx-large;
+        font-family: sans-serif;
+        padding: 2%;
+
+        margin-left: 20%;
+        margin-top: 0%;
+      }
+      .head p{
+          font-size:20px ;
+      }
+      .img{
+        left: 60%;
+        top: 15%;
+        position: absolute;
+        transform: translate(-50% -50%);
+      }
+      }
+      @media  screen and (max-width:480px ){
+            .img1{
+            position: absolute;
+           top: 14%;
+           left:20%;
+           transform: translate(-50% -50%);
+            }
+            .img1 img{
+                    height: 250px;
+                    width: 300px;
+            }
+            .main{
+            width: 90%;
+            height: 10vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }ol li{
+            margin: px 10px;
+            padding: 5px 5px;
+            position: relative;
+            transition: all 0.1s;
+            transition-delay: 0.1s;
+
+        }
+        .img{
+        left: 2%;
+        top: 55%;
+        position: absolute;
+        transform: translate(-50% -50%);
+      }
+      .img img {
+        border-radius: 50%;
+
+        height: 100px;
+        width: 100px;
+        -webkit-filter: drop-shadow(6px 6px 7px rgb(116, 137, 255));
+      }
+
+
+      .head {
+          top: 52%;
+          left: 28%;
+          position: absolute;
+          transform: translate(-50% -50%);
+          margin-bottom: 10px;
+          height: 280px;
+        width: 280px;
+        }
+        .head h1{
+            font-size: xx-large;
+        }
+        .head p{
+            font-size:20px ;
+            margin-left: 15%;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ol>
+        <li><a href="welcome.php">HOME</a></li>
+        <li><a href="download.html">DOWNLOAD</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ol>
+      <br />
+    </div>
+    <div class="img">
+      <img src="id1.jpg" />
+    </div>
+    <div class="head">
+      <h1>About Me</h1>
+
+      <p>
+        I am <strong>Shoeb Mulla</strong><br /><br />
+        Well I'm a student studying at Government Polytechnic of Solapur.
+        Learning in my final year of diploma in computer science branch.
+      </p>
+    </div>
+    <div class="img1">
+      <img src="about1.svg" />
+    </div>
+  </body>
+</html>
